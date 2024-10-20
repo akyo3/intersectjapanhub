@@ -104,4 +104,5 @@ for file in $HOME/drep-workspace/split/drep_part_*.json; do
   sleep 5
 done
 
-
+# 指定したディレクトリ内のすべての -metadata.json ファイルを一つにまとめる
+jq -s '.' $HOME/drep-workspace/metadata/*-metadata.json > $HOME/drep-workspace/metadata/combined_metadata.json
