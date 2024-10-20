@@ -20,8 +20,3 @@ chmod +x drep_metadata_request.sh
 ```
 ./drep_metadata_request.sh
 ```
-
-# 指定したディレクトリ内のすべての -metadata.json ファイルを一つにまとめる
-```
-jq -s '.' $HOME/drep-workspace/metadata/*-metadata.json > $HOME/drep-workspace/metadata/combined_metadata.json
-```
